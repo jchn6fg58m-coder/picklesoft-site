@@ -1,0 +1,113 @@
+/* PickleSoft: shared stylesheet for every page. Taken from the approved draft; only the
+   self-hosted @font-face rules below and the ".doc h1" and ".doc section h2" selectors (text pages now start with an h1, so their sub-headings are h2) are new. */
+
+/* Fonts: self-hosted, Latin subset, from Google Fonts (SIL Open Font Licence 1.1) */
+@font-face{font-family:"Young Serif";font-style:normal;font-weight:400;font-display:swap;src:url("/fonts/young-serif-400.woff2") format("woff2")}
+@font-face{font-family:"Figtree";font-style:normal;font-weight:400 700;font-display:swap;src:url("/fonts/figtree-variable.woff2") format("woff2")}
+@font-face{font-family:"DM Mono";font-style:normal;font-weight:400;font-display:swap;src:url("/fonts/dm-mono-400.woff2") format("woff2")}
+@font-face{font-family:"DM Mono";font-style:normal;font-weight:500;font-display:swap;src:url("/fonts/dm-mono-500.woff2") format("woff2")}
+
+/* Layout: one long page in the pickle's own world — plum-black night, crochet green, box-fresh white.
+   A stitched dashed line (crochet, and the game's leather mat) is the one recurring motif. */
+:root{
+  --night:#150d17;      /* the backdrop behind the pickle */
+  --plum:#22152a;       /* raised surfaces */
+  --plum-line:#3a2a43;  /* hairlines on plum */
+  --pickle:#5fae73;     /* crochet green, for accents and links */
+  --pickle-deep:#2f6b45;
+  --cotton:#f2efe8;     /* the trainers: headings and main text */
+  --soft:#b9adbd;       /* secondary text, plum-tinted grey */
+  --walnut:#3b2519;     /* Horologist's bench */
+  --walnut-deep:#28180f;
+  --brass:#d2ad57;
+  --baize:#24513a;
+  --display:"Young Serif", Georgia, "Times New Roman", serif;
+  --body:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"DM Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--night);color:var(--cotton);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--pickle);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px dashed var(--pickle);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.15;text-wrap:balance;margin:0}
+p{margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px}
+.eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.stitch{border:2px dashed color-mix(in srgb,var(--cotton) 28%,transparent)}
+
+/* Header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--night) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--plum-line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;color:var(--cotton);text-decoration:none;font-family:var(--display);font-size:22px}
+.brand img{width:36px;height:36px;border-radius:50%;border:2px solid var(--pickle-deep)}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{color:var(--soft);text-decoration:none;font-weight:500;font-size:15px}
+nav a:hover{color:var(--cotton)}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding-block:56px 40px}
+.hero h1{font-size:clamp(38px,6vw,66px)}
+.hero h1 em{font-style:normal;color:var(--pickle)}
+.hero .lead{margin-top:20px;font-size:19px;color:var(--soft);max-width:34ch}
+.hero .facts{margin-top:28px;display:flex;gap:10px;flex-wrap:wrap}
+.chip{font-family:var(--mono);font-size:13px;padding:6px 12px;border-radius:999px;border:1px dashed var(--plum-line);color:var(--soft)}
+.portrait{position:relative;justify-self:center;max-width:420px;width:100%}
+.portrait img{display:block;width:100%;height:auto;border-radius:18px}
+.portrait figcaption{position:absolute;left:14px;bottom:14px;font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--cotton);background:color-mix(in srgb,var(--night) 75%,transparent);padding:5px 10px;border-radius:6px}
+
+/* Horologist */
+.game{margin-block:40px;background:linear-gradient(180deg,var(--walnut) 0%,var(--walnut-deep) 100%);border-radius:22px;padding-block:44px;position:relative;overflow:hidden}
+.game::before{content:"";position:absolute;inset:10px;border:2px dashed color-mix(in srgb,var(--brass) 35%,transparent);border-radius:16px;pointer-events:none}
+.game-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;position:relative}
+.game .eyebrow{color:var(--brass)}
+.game h2{font-size:clamp(40px,6vw,60px);margin-top:10px;color:var(--cotton)}
+.game .tag{margin-top:14px;font-size:20px;font-family:var(--display);color:color-mix(in srgb,var(--cotton) 85%,var(--brass))}
+.game ul{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:14px}
+.game li{display:grid;grid-template-columns:22px 1fr;gap:10px;color:color-mix(in srgb,var(--cotton) 88%,var(--walnut))}
+.game li::before{content:"";width:10px;height:10px;margin-top:9px;border-radius:50%;background:var(--brass);box-shadow:0 0 0 3px color-mix(in srgb,var(--brass) 25%,transparent)}
+.status{margin-top:28px;display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13.5px;background:var(--brass);color:var(--walnut-deep);padding:9px 14px;border-radius:999px;font-weight:500}
+.status::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--walnut-deep);animation:tick 1.2s steps(2) infinite}
+@keyframes tick{50%{opacity:.25}}
+.shot{margin:0}
+.shot img{display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 18px 40px rgba(0,0,0,.45)}
+.shot figcaption{margin-top:10px;font-size:14px;color:color-mix(in srgb,var(--cotton) 70%,var(--walnut))}
+
+/* Partners strip */
+.partners{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;padding:24px;border-radius:16px;background:var(--plum);margin-block:12px 48px}
+.partners .mark{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;border:1.5px solid var(--pickle);color:var(--pickle);padding:4px 9px;border-radius:5px;white-space:nowrap}
+.partners p{color:var(--soft);max-width:62ch}
+.partners strong{color:var(--cotton);font-weight:600}
+
+/* Text pages */
+.doc{padding-block:48px;border-top:2px dashed var(--plum-line)}
+.doc h1,.doc h2{font-size:clamp(30px,4vw,40px)}
+.doc .updated{margin-top:8px}
+.doc-body{margin-top:24px;display:grid;gap:22px;max-width:68ch}
+.doc h3,.doc section h2{font-family:var(--body);font-weight:700;font-size:18px;color:var(--cotton)}
+.doc p,.doc li{color:color-mix(in srgb,var(--cotton) 82%,var(--night))}
+.doc ul{margin:8px 0 0;padding-left:20px;display:grid;gap:6px}
+.doc section{display:grid;gap:6px}
+.todo{color:var(--brass);font-family:var(--mono);font-size:14px}
+
+/* Support */
+.contact{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:16px 18px;border-radius:12px;background:var(--plum);border:1px solid var(--plum-line);max-width:max-content}
+.contact code{font-family:var(--mono);font-size:16px;color:var(--cotton);user-select:all}
+.contact button{font:600 14px var(--body);color:var(--night);background:var(--pickle);border:0;border-radius:999px;padding:8px 14px;cursor:pointer}
+.contact button:hover{background:color-mix(in srgb,var(--pickle) 85%,var(--cotton))}
+details{border-bottom:1px dashed var(--plum-line);padding-block:12px}
+summary{cursor:pointer;font-weight:600;color:var(--cotton)}
+details p{margin-top:8px}
+
+footer{border-top:1px solid var(--plum-line);padding-block:28px 40px;color:var(--soft);font-size:14px}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:820px){
+  .hero,.game-grid{grid-template-columns:1fr}
+  .hero{padding-block:32px 24px;gap:28px}
+  .portrait{max-width:340px}
+  .game{border-radius:16px}
+  .partners{grid-template-columns:1fr}
+}

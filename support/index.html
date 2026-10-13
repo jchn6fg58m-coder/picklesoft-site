@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · PickleSoft</title>
+<meta name="description" content="Questions, bugs or ideas about Horologist: email us and a real person will reply, usually within two working days.">
+<link rel="canonical" href="https://picklesoft.co.uk/support/">
+<meta name="theme-color" content="#150d17">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/fonts/figtree-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/young-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/styles.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PickleSoft">
+<meta property="og:title" content="Support · PickleSoft">
+<meta property="og:description" content="Questions, bugs or ideas about Horologist: email us and a real person will reply, usually within two working days.">
+<meta property="og:url" content="https://picklesoft.co.uk/support/">
+<meta property="og:image" content="https://picklesoft.co.uk/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PickleSoft's studio pickle: a crocheted green pickle with a shy smile, on a plum background.">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="/"><img src="/images/pickle-head.webp" width="36" height="36" alt="">PickleSoft</a>
+    <nav aria-label="Main">
+      <a href="/#horologist">Horologist</a>
+      <a href="/support/" aria-current="page">Support</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="wrap doc" id="support" aria-labelledby="h-support">
+    <p class="eyebrow">Help</p>
+    <h1 id="h-support">Support</h1>
+    <div class="doc-body">
+      <p>Questions, bugs or ideas: email us and a real person will reply, usually within two working days.</p>
+      <div class="contact">
+        <code id="email">support@picklesoft.co.uk</code>
+        <button type="button" id="copy">Copy address</button>
+      </div>
+      <div>
+        <details>
+          <summary>Is Horologist free?</summary>
+          <p>The first chapter, running your own repair workshop, is free to play in full. A single one-off purchase unlocks the rest of the game. There are no adverts in your way, no in-game currency and no way to pay for an advantage.</p>
+        </details>
+        <details>
+          <summary>I've changed phones. How do I get my purchase back?</summary>
+          <p>Open Settings in the game and tap "Restore purchases", signed in with the same Apple Account you bought it with.</p>
+        </details>
+        <details>
+          <summary>Where is my game saved?</summary>
+          <p>On your iPhone. If you delete the app, your save goes with it.</p>
+        </details>
+        <details>
+          <summary>Are the businesses in the game real?</summary>
+          <p>Most are invented, including every character. Real Jewellery Quarter businesses only appear as clearly labelled partners, as themselves.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 PickleSoft · <span class="todo">[full name]</span>, sole trader, trading as AVDB · Birmingham, UK</span>
+    <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/support/">Support</a></span>
+  </div>
+</footer>
+<script>
+document.getElementById('copy').addEventListener('click', function () {
+  var btn = this, text = document.getElementById('email').textContent;
+  function done(msg){ btn.textContent = msg; setTimeout(function(){ btn.textContent = 'Copy address'; }, 1800); }
+  function select(){ var r = document.createRange(); r.selectNodeContents(document.getElementById('email')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); done('Selected: press Copy'); }
+  try {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function(){ done('Copied'); }, select);
+    } else { select(); }
+  } catch (e) { select(); }
+});
+</script>
+</body>
+</html>
