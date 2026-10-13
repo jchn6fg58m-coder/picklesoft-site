@@ -9,7 +9,7 @@
   - https://picklesoft.co.uk/support/  ← for App Store Connect "Support URL"
   - https://picklesoft.co.uk/privacy/  ← for App Store Connect "Privacy Policy URL"
   - https://picklesoft.co.uk/terms/
-- **Build status is unclear.** GitHub's "pages build and deployment" run for the latest commit finished successfully, but the older Pages build record shows "Page build failed" with no detail. This can't be tested properly until the domain points at GitHub. If the site doesn't appear after the DNS change, open the repository's **Actions** tab, or **Settings → Pages**, and send me what it says.
+- **Builds are working.** The two "Page build failed" records are from the first two pushes, made while Pages was still being switched on. Every build since has succeeded. `.nojekyll` has been in the repository from the first commit, so Jekyll is skipped and only one build runs per push. I left the source on "Deploy from a branch". Asking GitHub's servers for picklesoft.co.uk directly already returns the new pages.
 - **Not live yet.** The domain still points at GoDaddy's parking page (`3.33.130.190` and `15.197.148.33`). The site will appear when you make the DNS changes below.
 
 ## What was built
@@ -102,8 +102,11 @@ Then send a test email to support@picklesoft.co.uk from a different account. Rep
 ## Still to do and decisions for you
 
 - **`[full name]` is still a placeholder** in the footer of every page and in the privacy policy's "Who we are". The brief didn't supply it. Your Git commits use "Rufus Constant", but I didn't assume that's the legal name to publish.
-- **Two things on the site have become, or may be, inaccurate.** I haven't changed them, because the brief says to keep the wording; see `PROPOSALS.md`.
-  1. The partners strip still says "Get in touch using the address below", but the address is no longer below it on the home page.
-  2. The privacy policy says partner-link taps pass through our website, "which counts the tap". A static GitHub Pages site can't count anything. It's also worth knowing that GitHub logs visitors' IP addresses for security, which the "No tracking" chip doesn't mention.
+- **Wording changes (owner's decisions, 13 October 2026):**
+  1. The partners strip now reads "Get in touch through our Support page.", with a link to the Support page.
+  2. The privacy policy's "Partner links" section no longer mentions counting taps. It now says "Partner links go straight to the partner's own website, which has its own privacy policy."
+  3. A new "Our website" section says the site is hosted by GitHub Pages, which keeps visitors' IP addresses in its security logs for a short time, with a link to GitHub's privacy statement.
+  The "No tracking" chip is unchanged, because it refers to the game.
+- **Worth confirming: "for a short time".** GitHub's Pages documentation says IP addresses are "logged and stored for security purposes" but gives no retention period. If GitHub's privacy statement doesn't support "a short time", consider dropping those words.
 - **The 512 px icon is an enlargement** of the 256 px `pickle-head.webp`, so it's slightly soft. A larger export would sharpen it.
 - Once the domain is live, re-run Lighthouse on the real addresses, and put the support and privacy addresses into App Store Connect.

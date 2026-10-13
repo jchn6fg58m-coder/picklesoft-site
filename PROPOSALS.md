@@ -4,12 +4,12 @@ Ideas noticed while building the site. None of these have been made: the brief a
 
 ## Wording that the move to separate pages has made inaccurate
 
-1. **The partners strip says "Get in touch using the address below."** On the draft's single page, the support email came straight after it. On the new home page nothing with an address follows. Suggested fix: "Get in touch at support@picklesoft.co.uk." or "Get in touch through our support page." with a link.
+1. *(Done 13 October 2026: now links to the Support page.)* **The partners strip says "Get in touch using the address below."** On the draft's single page, the support email came straight after it. On the new home page nothing with an address follows. Suggested fix: "Get in touch at support@picklesoft.co.uk." or "Get in touch through our support page." with a link.
 
 ## Privacy policy accuracy (worth fixing before Apple review)
 
-2. **"If you tap a partner's link, it may pass through our website, which counts the tap..."** The site is now purely static on GitHub Pages and has no way to count anything. Either remove the counting claim, or decide how taps would be counted (which would itself need describing).
-3. **GitHub logs visitors' IP addresses.** GitHub's documentation says: "When a GitHub Pages site is visited, the visitor's IP address is logged and stored for security purposes." The policy covers the game rather than the website, so it isn't wrong as written, but the home page's "No tracking" chip and the policy's spirit would be better served by one honest line, for example: "Our website is hosted by GitHub, which keeps visitors' IP addresses in its security logs. We don't use cookies or analytics, and we don't see those logs."
+2. *(Done 13 October 2026: replaced with the owner's wording.)* **"If you tap a partner's link, it may pass through our website, which counts the tap..."** The site is now purely static on GitHub Pages and has no way to count anything. Either remove the counting claim, or decide how taps would be counted (which would itself need describing).
+3. *(Done 13 October 2026: "Our website" section added.)* **GitHub logs visitors' IP addresses.** GitHub's documentation says: "When a GitHub Pages site is visited, the visitor's IP address is logged and stored for security purposes." The policy covers the game rather than the website, so it isn't wrong as written, but the home page's "No tracking" chip and the policy's spirit would be better served by one honest line, for example: "Our website is hosted by GitHub, which keeps visitors' IP addresses in its security logs. We don't use cookies or analytics, and we don't see those logs."
 
 ## Small polish
 
