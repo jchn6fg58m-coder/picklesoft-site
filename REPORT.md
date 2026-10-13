@@ -9,6 +9,7 @@
   - https://picklesoft.co.uk/support/  ← for App Store Connect "Support URL"
   - https://picklesoft.co.uk/privacy/  ← for App Store Connect "Privacy Policy URL"
   - https://picklesoft.co.uk/terms/
+- **Build status is unclear.** GitHub's "pages build and deployment" run for the latest commit finished successfully, but the older Pages build record shows "Page build failed" with no detail. This can't be tested properly until the domain points at GitHub. If the site doesn't appear after the DNS change, open the repository's **Actions** tab, or **Settings → Pages**, and send me what it says.
 - **Not live yet.** The domain still points at GoDaddy's parking page (`3.33.130.190` and `15.197.148.33`). The site will appear when you make the DNS changes below.
 
 ## What was built
