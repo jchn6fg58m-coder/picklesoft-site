@@ -111,3 +111,25 @@ footer{border-top:1px solid var(--plum-line);padding-block:28px 40px;color:var(-
   .game{border-radius:16px}
   .partners{grid-template-columns:1fr}
 }
+
+/* AVDB and Bigger Than You: added October 2026. These reuse the Horologist ".game" block
+   unchanged and only swap its colours, so nothing above this line was edited. */
+.app-avdb{--app-bg:#7a1a36;--app-bg-deep:#4a0d20;--app-accent:#a9c2d8;--app-ink:#2a0812}
+.app-bty{--app-bg:#151b17;--app-bg-deep:#070908;--app-accent:#2fbf71;--app-ink:#06120b}
+.game.app-avdb,.game.app-bty{background:linear-gradient(180deg,var(--app-bg) 0%,var(--app-bg-deep) 100%)}
+.game.app-avdb::before,.game.app-bty::before{border-color:color-mix(in srgb,var(--app-accent) 35%,transparent)}
+.app-avdb .eyebrow,.app-bty .eyebrow{color:var(--app-accent)}
+.app-avdb .tag,.app-bty .tag{color:color-mix(in srgb,var(--cotton) 88%,var(--app-accent))}
+.app-avdb li,.app-bty li{color:color-mix(in srgb,var(--cotton) 90%,var(--app-bg))}
+.app-avdb li::before,.app-bty li::before{background:var(--app-accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--app-accent) 25%,transparent)}
+.app-avdb .status,.app-bty .status{background:var(--app-accent);color:var(--app-ink)}
+.app-avdb .status::before,.app-bty .status::before{background:var(--app-ink)}
+.app-icon{display:block;width:72px;height:72px;border-radius:16px;margin-bottom:18px;box-shadow:0 8px 20px rgba(0,0,0,.35)}
+.fine{margin-top:22px;font-size:14px;color:color-mix(in srgb,var(--cotton) 72%,var(--app-bg));max-width:52ch}
+.fine a{color:var(--cotton)}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start;max-width:440px;justify-self:center}
+.shots img{border-radius:22px}
+.shots img+img{margin-top:40px}
+.app-mark{justify-self:center;max-width:300px;text-align:center}
+.app-mark img{border-radius:22%;border:1px solid #2e382f}
+.app-mark figcaption{color:color-mix(in srgb,var(--cotton) 70%,var(--app-bg))}
