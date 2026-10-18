@@ -4,7 +4,7 @@ The studio website for PickleSoft, published at **https://picklesoft.co.uk**. It
 
 | Address | File |
 | --- | --- |
-| `/` | `index.html`: home (hero, Horologist, partners) |
+| `/` | `index.html`: home (hero, then tabs: `/#apps` (default), `/#websites`, `/#tools`) |
 | `/support/` | `support/index.html` |
 | `/privacy/` | `privacy/index.html` |
 | `/terms/` | `terms/index.html` |
@@ -26,3 +26,7 @@ Then open http://localhost:8000. Use a local server rather than opening the file
 ## How it's published
 
 GitHub Pages serves the `main` branch from the repository root. The `CNAME` file holds the custom domain, `picklesoft.co.uk`, and `.nojekyll` tells Pages to serve the files exactly as they are. Pushing to `main` updates the live site, usually within a minute or two.
+
+## Placeholders
+
+Slots still waiting for images or wording are dashed brass boxes starting "Placeholder:". Find them with `grep -n 'class="ph' index.html`. Swap a screenshot placeholder `<span>` for an `<img>`; the Websites gallery has room for 6–10, so copy a `<figure>` to add more.
