@@ -171,3 +171,18 @@ footer{border-top:1px solid var(--plum-line);padding-block:28px 40px;color:var(-
 @media (max-width:820px){
   .gallery-2,.tool-grid{grid-template-columns:1fr}
 }
+
+/* Quick links above the apps, and the App Store badge: added October 2026. New rules only. */
+.picks{margin-block:36px 8px}
+.picks-list{margin-top:14px;display:flex;flex-wrap:wrap;gap:14px}
+.pick{flex:1 1 300px;display:grid;grid-template-columns:60px minmax(0,1fr);column-gap:16px;align-items:center;padding:16px 18px;background:var(--plum);border:1px solid var(--plum-line);border-radius:18px;color:var(--cotton);text-decoration:none;transition:border-color .15s}
+.pick:hover{border-color:var(--pickle)}
+.pick-icon{grid-row:span 2;width:60px;height:60px;border-radius:14px;display:flex;align-items:center;justify-content:center}
+.pick-horologist{background:var(--walnut);color:var(--brass)}
+.pick-text{display:grid;gap:2px}
+.pick-text strong{font-family:var(--display);font-weight:400;font-size:21px;line-height:1.2}
+.pick-text span{font-size:15px;color:var(--soft);line-height:1.4}
+.pick-cta{grid-column:2;justify-self:start;margin-top:8px;display:inline-flex;align-items:center;gap:5px;font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--soft)}
+.pick-live{color:var(--pickle)}
+.badge{display:inline-block;line-height:0;border-radius:8px}
+.badge img{height:44px;width:auto}
