@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · Bigger Than You</title>
+<meta name="description" content="Help with Bigger Than You: data corrections, club colours, free comparisons, purchases and refunds.">
+<link rel="canonical" href="https://picklesoft.co.uk/bigger-than-you/support/">
+<meta name="theme-color" content="#150d17">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/fonts/figtree-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/young-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/styles.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PickleSoft">
+<meta property="og:title" content="Support · Bigger Than You">
+<meta property="og:description" content="Help with Bigger Than You: data corrections, club colours, free comparisons, purchases and refunds.">
+<meta property="og:url" content="https://picklesoft.co.uk/bigger-than-you/support/">
+<meta property="og:image" content="https://picklesoft.co.uk/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PickleSoft's studio pickle: a crocheted green pickle with a shy smile, on a plum background.">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="/"><img src="/images/pickle-head.webp" width="36" height="36" alt="">PickleSoft</a>
+    <nav aria-label="Main">
+      <a href="/#horologist">Horologist</a>
+      <a href="/support/">Support</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="wrap doc" id="support" aria-labelledby="h-support">
+    <p class="eyebrow">Bigger Than You</p>
+    <h1 id="h-support">Support</h1>
+    <p class="eyebrow updated">Last updated 29 October 2026</p>
+    <div class="doc-body">
+      <p>Something wrong, a number that looks off, or a club in the wrong colours? Email us and we will come back to you.</p>
+      <div class="contact">
+        <code id="email">support@picklesoft.co.uk</code>
+        <button type="button" id="copy">Copy address</button>
+      </div>
+      <div>
+        <details>
+          <summary>Reporting a mistake in the data</summary>
+          <p>The record runs to 213 clubs across 127 seasons, and it is compiled by hand from final league tables. If you think something is wrong, please say which club, which season, and what it should be. Corrections are taken seriously and applied at the next update.</p>
+        </details>
+        <details>
+          <summary>My club's colours are wrong</summary>
+          <p>Club colours are chosen to identify a club on screen, which is not always its shirt: a white-shirted club is shown in its trim, because white on white is nothing. If yours looks wrong to you, tell us and we will look at it.</p>
+        </details>
+        <details>
+          <summary>How do the six free comparisons work?</summary>
+          <p>You get six different opponents, not six taps. Going back to a club you have already looked at costs nothing and never will, so nobody loses one to a mis-tap. Random tie does not count against the six either, because you cannot aim a random draw at the club you actually wanted. Your own club is never an opponent.</p>
+        </details>
+        <details>
+          <summary>Shaking the phone does nothing</summary>
+          <p>Shake works on the Taunt tab and serves a different line each time. The line under the card tells you which is available: if it reads "Tap Another" rather than "Shake for another", your device has not made its motion sensor available to the app — the Another button does exactly the same job.</p>
+        </details>
+        <details>
+          <summary>I paid and the app still says I have used my free comparisons</summary>
+          <p>Open the app and use Restore purchases. The App Store holds the record of your purchase, so restoring it on the same Apple Account will reopen everything. If that does not work, email us with the date of purchase and we will help.</p>
+        </details>
+        <details>
+          <summary>Why does it say my club finished 40th?</summary>
+          <p>Positions are counted across the whole English pyramid rather than within a division, so a club that won the second tier is shown as around 21st in the country. That is what makes seasons comparable across eras and divisions. The app explains each measure behind the information button next to it.</p>
+        </details>
+        <details>
+          <summary>Requesting a refund</summary>
+          <p>Purchases are handled by Apple, so refunds are too. Request one at <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>.</p>
+        </details>
+      </div>
+      <section>
+        <h2>Privacy</h2>
+        <p>The app collects nothing. The full explanation is in the <a href="/bigger-than-you/privacy/">privacy policy</a>.</p>
+      </section>
+      <section>
+        <h2>Contact</h2>
+        <p><a href="mailto:support@picklesoft.co.uk">support@picklesoft.co.uk</a> — we aim to reply within a few days.</p>
+      </section>
+      <p class="fine-doc">Bigger Than You is an independent statistical record. It is not affiliated with, endorsed by or connected to any football club, league or governing body. Club names are used to identify historical results and nothing more.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 PickleSoft · <span class="todo">[full name]</span>, sole trader, trading as AVDB · Birmingham, UK</span>
+    <span><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/support/">Support</a></span>
+  </div>
+</footer>
+<script>
+document.getElementById('copy').addEventListener('click', function () {
+  var btn = this, text = document.getElementById('email').textContent;
+  function done(msg){ btn.textContent = msg; setTimeout(function(){ btn.textContent = 'Copy address'; }, 1800); }
+  function select(){ var r = document.createRange(); r.selectNodeContents(document.getElementById('email')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); done('Selected: press Copy'); }
+  try {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function(){ done('Copied'); }, select);
+    } else { select(); }
+  } catch (e) { select(); }
+});
+</script>
+</body>
+</html>

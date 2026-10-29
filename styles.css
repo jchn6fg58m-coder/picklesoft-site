@@ -186,3 +186,6 @@ footer{border-top:1px solid var(--plum-line);padding-block:28px 40px;color:var(-
 .pick-live{color:var(--pickle)}
 .badge{display:inline-block;line-height:0;border-radius:8px}
 .badge img{height:44px;width:auto}
+
+/* Bigger Than You's privacy and support pages: added October 2026. New rule only. */
+.fine-doc{margin-top:8px;padding-top:18px;border-top:1px dashed var(--plum-line);font-size:14px;color:var(--soft)}
