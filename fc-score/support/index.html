@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · FC Score</title>
+<meta name="description" content="Help with FC Score: reporting a figure, clubs still to come, how scores are worked out, editions and euros.">
+<link rel="canonical" href="https://picklesoft.co.uk/fc-score/support/">
+<meta name="theme-color" content="#150d17">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/fonts/figtree-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/young-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/styles.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PickleSoft">
+<meta property="og:title" content="Support · FC Score">
+<meta property="og:description" content="Help with FC Score: reporting a figure, clubs still to come, how scores are worked out, editions and euros.">
+<meta property="og:url" content="https://picklesoft.co.uk/fc-score/support/">
+<meta property="og:image" content="https://picklesoft.co.uk/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PickleSoft's studio pickle: a crocheted green pickle with a shy smile, on a plum background.">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="/"><img src="/images/pickle-head.webp" width="36" height="36" alt="">PickleSoft</a>
+    <nav aria-label="Main">
+      <a href="/#horologist">Horologist</a>
+      <a href="/support/">Support</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="wrap doc" id="support" aria-labelledby="h-support">
+    <p class="eyebrow">FC Score</p>
+    <h1 id="h-support">Support</h1>
+    <p class="eyebrow updated">Last updated 7 November 2026</p>
+    <div class="doc-body">
+      <p>A figure that looks wrong, a club you are waiting for, or something not working? Email us and we will come back to you.</p>
+      <div class="contact">
+        <code id="email">support@picklesoft.co.uk</code>
+        <button type="button" id="copy">Copy address</button>
+      </div>
+      <div>
+        <details>
+          <summary>Reporting a figure you think is wrong</summary>
+          <p>Every figure is read from the club's own annual accounts as filed at Companies House, or from its record of transfer fees, and recorded under the same rules for every club. If you think one is wrong, tell us the club, the edition, the measure and what you believe it should be, with the page of the accounts if you have it. Corrections are checked against the accounts and published as soon as they are confirmed, with no app update needed.</p>
+        </details>
+        <details>
+          <summary>My club isn't scored yet</summary>
+          <p>Clubs are added as each one’s accounts and transfer record are checked, and they appear under Coming soon on the table until then. A club joins the moment it is published; you do not need to update the app. Pull down on the table to refresh.</p>
+        </details>
+        <details>
+          <summary>Why did my club get the score it did?</summary>
+          <p>Tap the club, then any of the ten measures. Each one shows what the club scored, the steps it is scored on with its own step highlighted, and the figures behind it, year by year. How a club is scored, at the foot of the table, sets out the method in full.</p>
+        </details>
+        <details>
+          <summary>What are the editions?</summary>
+          <p>Each edition scores the clubs on one year's accounts and the transfer windows around it. Edition 3, 2025-26, uses the 2024-25 accounts. Switch between editions with the tabs at the top of any screen to see how a club has moved.</p>
+        </details>
+        <details>
+          <summary>Why are transfer fees in euros?</summary>
+          <p>Transfer fees are recorded in euros, as they are most widely reported, at the fixed fee agreed at the time of the deal. Where they are set against revenue, the revenue is converted at that season’s exchange rate. Everything from the accounts is in pounds.</p>
+        </details>
+        <details>
+          <summary>Is this the Premier League's spending rules?</summary>
+          <p>No. FC Score is an independent measure of financial health. It is not the Premier League's profit and sustainability calculation, and a club's score says nothing about whether it has met those rules. Where the app refers to what the spending rules count, it says so.</p>
+        </details>
+        <details>
+          <summary>The app shows nothing, or an error</summary>
+          <p>FC Score needs an internet connection to load the latest scores. Check you are online, then pull down on the table to try again. If it still fails, email us with what the screen says.</p>
+        </details>
+      </div>
+      <section>
+        <h2>Privacy</h2>
+        <p>The app collects nothing about you. The full explanation is in the <a href="/fc-score/privacy/">privacy policy</a>.</p>
+      </section>
+      <section>
+        <h2>Contact</h2>
+        <p><a href="mailto:support@picklesoft.co.uk">support@picklesoft.co.uk</a> — we aim to reply within a few days.</p>
+      </section>
+      <p class="fine-doc">FC Score is independent. It is not affiliated with, endorsed by or connected to any football club, league or governing body. Club names are used to identify published accounts and nothing more. FC Score is not financial or investment advice.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 PickleSoft, a trading name of James Constant · Birmingham, UK</span>
+    <span><a href="/fc-score/privacy/">Privacy</a> · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms</a> · <a href="/fc-score/support/">Support</a></span>
+  </div>
+</footer>
+<script>
+document.getElementById('copy').addEventListener('click', function () {
+  var btn = this, text = document.getElementById('email').textContent;
+  function done(msg){ btn.textContent = msg; setTimeout(function(){ btn.textContent = 'Copy address'; }, 1800); }
+  function select(){ var r = document.createRange(); r.selectNodeContents(document.getElementById('email')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); done('Selected: press Copy'); }
+  try {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function(){ done('Copied'); }, select);
+    } else { select(); }
+  } catch (e) { select(); }
+});
+</script>
+</body>
+</html>
