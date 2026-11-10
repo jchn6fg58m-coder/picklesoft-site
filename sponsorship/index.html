@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sponsorship · PickleSoft</title>
+<meta name="description" content="Sponsor FC Score or Net Spend: one sponsor at a time, by season or transfer window, on every page and every card people share, with the adverts switched off.">
+<link rel="canonical" href="https://picklesoft.co.uk/sponsorship/">
+<meta name="theme-color" content="#150d17">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/fonts/figtree-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/young-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/styles.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PickleSoft">
+<meta property="og:title" content="Sponsorship · PickleSoft">
+<meta property="og:description" content="Sponsor FC Score or Net Spend: one sponsor at a time, by season or transfer window, on every page and every card people share, with the adverts switched off.">
+<meta property="og:url" content="https://picklesoft.co.uk/sponsorship/">
+<meta property="og:image" content="https://picklesoft.co.uk/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PickleSoft's studio pickle: a crocheted green pickle with a shy smile, on a plum background.">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="/"><img src="/images/pickle-head.webp" width="36" height="36" alt="">PickleSoft</a>
+    <nav aria-label="Main">
+      <a href="/#horologist">Horologist</a>
+      <a href="/support/">Support</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="wrap doc" aria-labelledby="h-page">
+    <p class="eyebrow">FC Score · Net Spend</p>
+    <h1 id="h-page">Sponsoring the apps</h1>
+    <p class="eyebrow updated">Last updated 10 November 2026</p>
+    <div class="doc-body">
+      <p>FC Score and Net Spend are free apps about football's money: what clubs earn, spend and owe, and who buys and sells well. Each takes one sponsor at a time, by season or by transfer window.</p>
+
+      <section>
+        <h2>What a sponsor gets</h2>
+        <details open>
+          <summary>Your name across the app</summary>
+          <p>An "In association with" strip carrying your name, a line of your choosing and a link, at the foot of the club pages, rankings and detail screens where the banner adverts would otherwise sit.</p>
+        </details>
+        <details open>
+          <summary>On every card people share</summary>
+          <p>Both apps turn a club's figures into a card to send: a club's score, its transfer receipt, a ranking, or two clubs side by side. Every card carries your name as it travels through group chats and social feeds, alongside the app and its App Store badge.</p>
+        </details>
+        <details open>
+          <summary>The adverts switched off</summary>
+          <p>While you are the sponsor, the network adverts are switched off for every reader. Yours is the only brand in the app.</p>
+        </details>
+        <details>
+          <summary>When it changes</summary>
+          <p>A sponsorship starts and ends on the day agreed, with no app update needed. One app or both.</p>
+        </details>
+      </section>
+
+      <section>
+        <h2>Who it suits</h2>
+        <p>Brands that want to stand beside football's money story and the people who follow it closely: kit and boot makers, finance and fintech, publishers, data and analytics firms, agencies, and anyone with a reason to be next to an independent, figures-first read of the game.</p>
+      </section>
+
+      <section>
+        <h2>The apps</h2>
+        <p><strong>FC Score</strong> scores every Premier League club out of 100 on its financial condition, from its own published accounts, and follows each club edition by edition. <strong>Net Spend</strong> is every club's transfer receipt: what went out, what came in, and the total at the bottom, for any run of seasons since 2020-21. Both are by Two-Footed Tackle, built by PickleSoft.</p>
+      </section>
+
+      <section>
+        <h2>Get in touch</h2>
+        <p>Rates, dates and audience figures on request.</p>
+        <div class="contact">
+          <code id="email">sponsorship@picklesoft.co.uk</code>
+          <button type="button" id="copy">Copy address</button>
+        </div>
+        <p>Or <a href="mailto:sponsorship@picklesoft.co.uk?subject=Sponsoring%20FC%20Score%20and%20Net%20Spend">email us directly</a>. Looking to use the data itself? See <a href="/licensing/">licensing</a>.</p>
+      </section>
+      <p class="fine-doc">FC Score and Net Spend are independent. They are not affiliated with, endorsed by or connected to any football club, league or governing body. Club names are used to identify published accounts and recorded transfers and nothing more. Nothing here is financial or investment advice.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 PickleSoft, a trading name of James Constant · Birmingham, UK</span>
+    <span><a href="/licensing/">Licensing</a> · <a href="/sponsorship/">Sponsorship</a> · <a href="/privacy/">Privacy</a> · <a href="/support/">Support</a></span>
+  </div>
+</footer>
+<script>
+document.getElementById('copy').addEventListener('click', function () {
+  var btn = this, text = document.getElementById('email').textContent;
+  function done(msg){ btn.textContent = msg; setTimeout(function(){ btn.textContent = 'Copy address'; }, 1800); }
+  function select(){ var r = document.createRange(); r.selectNodeContents(document.getElementById('email')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); done('Selected: press Copy'); }
+  try {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function(){ done('Copied'); }, select);
+    } else { select(); }
+  } catch (e) { select(); }
+});
+</script>
+</body>
+</html>
