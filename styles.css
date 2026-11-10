@@ -189,3 +189,16 @@ footer{border-top:1px solid var(--plum-line);padding-block:28px 40px;color:var(-
 
 /* Bigger Than You's privacy and support pages: added October 2026. New rule only. */
 .fine-doc{margin-top:8px;padding-top:18px;border-top:1px dashed var(--plum-line);font-size:14px;color:var(--soft)}
+
+/* FC Score and Net Spend: added November 2026. New rules only; they reuse the .game block like AVDB. */
+.app-fcs{--app-bg:#26324f;--app-bg-deep:#121a2c;--app-accent:#a6d6a8;--app-ink:#0f1c12}
+.app-ns{--app-bg:#2a2d33;--app-bg-deep:#111317;--app-accent:#e2574d;--app-ink:#fff}
+.game.app-fcs,.game.app-ns{background:linear-gradient(180deg,var(--app-bg) 0%,var(--app-bg-deep) 100%)}
+.game.app-fcs::before,.game.app-ns::before{border-color:color-mix(in srgb,var(--app-accent) 35%,transparent)}
+.app-fcs .eyebrow,.app-ns .eyebrow{color:var(--app-accent)}
+.app-fcs .tag,.app-ns .tag{color:color-mix(in srgb,var(--cotton) 88%,var(--app-accent))}
+.app-fcs li,.app-ns li{color:color-mix(in srgb,var(--cotton) 90%,var(--app-bg))}
+.app-fcs li::before,.app-ns li::before{background:var(--app-accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--app-accent) 25%,transparent)}
+.app-fcs .status,.app-ns .status{background:var(--app-accent);color:var(--app-ink)}
+.app-fcs .status::before,.app-ns .status::before{background:var(--app-ink)}
+.game .shots figcaption{color:color-mix(in srgb,var(--cotton) 70%,var(--walnut))}
