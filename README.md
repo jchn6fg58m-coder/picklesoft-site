@@ -11,6 +11,7 @@ The studio website for PickleSoft, published at **https://picklesoft.co.uk**. It
 | `/horologist/privacy/`, `/terms/`, `/support/` | `horologist/…/index.html` |
 | `/bigger-than-you/privacy/`, `/support/` | `bigger-than-you/…/index.html` (its terms are Apple's standard licence) |
 | `/fc-score/privacy/`, `/support/` | `fc-score/…/index.html` (its terms are Apple's standard licence) |
+| `/net-spend/privacy/`, `/support/` | `net-spend/…/index.html` (its terms are Apple's standard licence) |
 | `/licensing/`, `/sponsorship/` | licensing the FC Score and Net Spend data; sponsoring the apps |
 | any missing page | `404.html` |
 
