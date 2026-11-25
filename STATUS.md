@@ -4,6 +4,14 @@ First draft written from the code and git history on 17 Nov 2026. Jimmy to corre
 Update this file at the end of every pot: where things stand, the next step, open decisions. Newest first.
 Rules for every repo: `~/Developer/CLAUDE.md`.
 
+## 25 Nov 2026
+
+**Tools tab:** the Growth IQ placeholder card is replaced by two filled cards, **GrowthMg** ("Measured Growth", for
+councils and public bodies, In development) and **BusinessHg** ("The Health Gauge", for SMEs, In planning), each with
+its element as a periodic-table tile (Mg 12, Hg 80). GrowthMg keeps the two screenshot placeholders. New CSS appended
+only (`.app-hg`, `.element`, the green card's status pill). The names: claude.ai doc "GrowthMg and BusinessHg — the
+names and their story".
+
 ## 17 Nov 2026
 
 **What it is:** picklesoft.co.uk, the studio site. Static HTML, no build step, no analytics or cookies. GitHub Pages

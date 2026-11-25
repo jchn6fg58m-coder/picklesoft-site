@@ -202,3 +202,13 @@ footer{border-top:1px solid var(--plum-line);padding-block:28px 40px;color:var(-
 .app-fcs .status,.app-ns .status{background:var(--app-accent);color:var(--app-ink)}
 .app-fcs .status::before,.app-ns .status::before{background:var(--app-ink)}
 .game .shots figcaption{color:color-mix(in srgb,var(--cotton) 70%,var(--walnut))}
+
+/* GrowthMg and BusinessHg on the Tools tab, added 25 Nov 2026. New rules only: each card carries
+   its element as a periodic-table tile, and BusinessHg swaps the green for mercury's silver. */
+.app-hg{--app-bg:#2b3138;--app-bg-deep:#14181c;--app-accent:#c6d0da;--app-ink:#101418}
+.app-tool .status{background:var(--app-accent);color:var(--app-ink)}
+.app-tool .status::before{background:var(--app-ink)}
+.element{width:84px;height:84px;margin-bottom:18px;padding:6px 8px;box-sizing:border-box;display:grid;grid-template-rows:auto 1fr auto;border:2px solid var(--app-accent);border-radius:12px;background:color-mix(in srgb,var(--app-accent) 10%,transparent);color:var(--cotton)}
+.el-num{font:500 11px var(--mono);color:var(--app-accent)}
+.el-sym{font-family:var(--display);font-size:34px;line-height:1;align-self:center;justify-self:center}
+.el-name{font:500 9px var(--mono);letter-spacing:.08em;text-transform:uppercase;justify-self:center;color:color-mix(in srgb,var(--cotton) 75%,var(--app-bg))}
